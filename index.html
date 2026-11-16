@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bäckerei Acker — Holzofenbrot aus Prenzlauer Berg, Berlin</title>
+<meta name="description" content="Bäckerei Acker in Berlin-Prenzlauer Berg: Holzofenbrot aus eigenem Sauerteig, Franzbrötchen, Kuchen und Filterkaffee. Täglich ab 6:30 Uhr frisch gebacken.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23a8451f'/%3E%3Cpath d='M8 20c0-4.5 3.6-8 8-8s8 3.5 8 8z' fill='%23f4e6cd'/%3E%3Cpath d='M12 16c1-2 2.5-3 4-3M16 16.5c1-1.8 2.4-2.6 3.8-2.6' stroke='%23a8451f' stroke-width='1.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<!-- DIRECTION: Bakery / food craft, warm Berlin daylight.
+     Palette: cream #f7efe0, paper #fffaf2, ink #241c14, rust #a8451f, butter #e8b45a, olive #5d6a3f.
+     Type: Fraunces (display, optical size) + Instrument Sans (body) + DM Mono (prices/times).
+     Hero: poster typographic statement with hand-drawn wheat SVG bleeding off the right edge.
+     Modules: tab switcher (Tageszeiten), dotted-leader menu board, ruled info list, bento cards, details-FAQ, closing band.
+     Motion: wheat sway, scroll reveals, sticky header condense. All photos = real Unsplash CDN URLs. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Instrument+Sans:ital,wght@0,400..600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Bäckerei Acker, zur Startseite">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" width="28" height="28">
+        <path d="M4 21c0-6.6 5.4-12 12-12s12 5.4 12 12H4z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M10 17c1.2-2.4 3-3.6 4.8-3.6M16 18c1.2-2.2 2.9-3.2 4.6-3.2M13 13.4c.6-1.6 1.6-2.6 2.8-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+        <path d="M3 25h26" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">Bäckerei&nbsp;Acker<em>Berlin · Prenzlauer Berg</em></span>
+    </a>
+
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#theke">Theke</a>
+      <a href="#handwerk">Handwerk</a>
+      <a href="#tageszeiten">Tageszeiten</a>
+      <a href="#besuch">Besuch</a>
+    </nav>
+
+    <a class="btn btn-solid btn-sm header-cta" href="#besuch">Vorbestellen</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Menü öffnen">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#theke">Theke</a>
+    <a href="#handwerk">Handwerk</a>
+    <a href="#tageszeiten">Tageszeiten</a>
+    <a href="#besuch">Besuch</a>
+    <a class="btn btn-solid" href="#besuch">Brot vorbestellen</a>
+  </div>
+</header>
+
+<main id="main">
+  <span id="top"></span>
+
+  <!-- HERO : poster statement -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="dot"></span>Holzofen · täglich ab 6:30 Uhr</p>
+        <h1 class="reveal">
+          Brot, das<br>
+          <span class="it">Zeit</span> bekommt.
+        </h1>
+        <p class="lede reveal">
+          Zwei Öfen, ein Sauerteig von 2011 und Mehle aus dem Umland.
+          Wir backen, bis die Theke leer ist — nicht länger.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-solid" href="#theke">Heutige Theke ansehen</a>
+          <a class="btn btn-ghost" href="#besuch">Fünf Minuten nach Prenzlauer Berg</a>
+        </div>
+        <ul class="hero-facts reveal">
+          <li><strong>6:30</strong><span>Erstes Brot aus dem Ofen</span></li>
+          <li><strong>1&nbsp;kg</strong><span>Dinkel-Roggen-Sauerteig pro Laib</span></li>
+          <li><strong>38</strong><span>Stunden Reifezeit</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&q=80"
+               alt="Rustikale Brote mit dunkler Kruste auf dem Holzregal der Bäckerei" width="900" height="1100" fetchpriority="high">
+        </div>
+        <svg class="wheat" viewBox="0 0 120 460" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+            <path d="M60 460V150"/>
+            <path d="M60 168c-16-8-24-24-24-40 16 6 24 22 24 40z"/>
+            <path d="M60 168c16-8 24-24 24-40-16 6-24 22-24 40z"/>
+            <path d="M60 208c-18-9-27-27-27-45 18 7 27 25 27 45z"/>
+            <path d="M60 208c18-9 27-27 27-45-18 7-27 25-27 45z"/>
+            <path d="M60 248c-16-8-24-24-24-40 16 6 24 22 24 40z"/>
+            <path d="M60 248c16-8 24-24 24-40-16 6-24 22-24 40z"/>
+            <path d="M60 288c-14-7-21-21-21-35 14 5 21 19 21 35z"/>
+            <path d="M60 288c14-7 21-21 21-35-14 5-21 19-21 35z"/>
+            <path d="M60 150c-6-12-6-26 0-38 6 12 6 26 0 38z"/>
+          </g>
+        </svg>
+        <div class="hero-stamp">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <defs><path id="circlePath" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs>
+            <text><textPath href="#circlePath" startOffset="0">SEIT 2011 · SAUERTEIG · HOLZOFEN · </textPath></text>
+          </svg>
+          <span>12</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Franzbrötchen</span><span>·</span><span>Roggenmischbrot</span><span>·</span><span>Buttercroissant</span><span>·</span><span>Kardamom-Schnecke</span><span>·</span><span>Käsekuchen</span><span>·</span><span>Dinkelbaguette</span><span>·</span>
+      <span>Franzbrötchen</span><span>·</span><span>Roggenmischbrot</span><span>·</span><span>Buttercroissant</span><span>·</span><span>Kardamom-Schnecke</span><span>·</span><span>Käsekuchen</span><span>·</span><span>Dinkelbaguette</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- THEKE / MENU BOARD -->
+  <section class="section" id="theke">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow reveal"><span class="dot"></span>Die Theke</p>
+          <h2 class="reveal">Was heute auf dem Blech liegt</h2>
+        </div>
+        <p class="section-note reveal">Preise in Euro, inklusive. Ab 15 Uhr geben wir Brot mit 30 % Nachlass ab, damit nichts im Müll landet.</p>
+      </div>
+
+      <div class="menu-legend reveal">
+        <span class="legend-item"><i class="lg lg-brot"></i>Brot</span>
+        <span class="legend-item"><i class="lg lg-fein"></i>Feingebäck</span>
+        <span class="legend-item"><i class="lg lg-suess"></i>Süßes</span>
+        <span class="legend-item"><i class="lg lg-kaffee"></i>Kaffee</span>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-col reveal">
+          <h3>Brot vom Holzofen</h3>
+          <ul class="menu-list">
+            <li><span class="m-name">Ackerlaib<em>Roggen &amp; Weizen, dunkle Kruste, 1 kg</em></span><span class="leader"></span><span class="m-price">7,50</span></li>
+            <li><span class="m-name">Dinkelbrot<em>mit gerösteten Sonnenblumenkernen</em></span><span class="leader"></span><span class="m-price">6,80</span></li>
+            <li><span class="m-name">Kastenbrot<em>Buttermilch, weiche Kruste, 750 g</em></span><span class="leader"></span><span class="m-price">5,40</span></li>
+            <li><span class="m-name">Baguette<em>Dinkel, über Nacht geführt</em></span><span class="leader"></span><span class="m-price">3,90</span></li>
+            <li><span class="m-name">Körnerbrötchen<em>Leinsaat, Hafer, Sesam</em></span><span class="leader"></span><span class="m-price">1,60</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-col reveal">
+          <h3>Feingebäck am Morgen</h3>
+          <ul class="menu-list">
+            <li><span class="m-name">Buttercroissant<em>27 Schichten, französische Butter</em></span><span class="leader"></span><span class="m-price">2,80</span></li>
+            <li><span class="m-name">Franzbrötchen<em>Zimt, brauner Zucker</em></span><span class="leader"></span><span class="m-price">3,20</span></li>
+            <li><span class="m-name">Kardamom-Schnecke<em>Hefezopf-Teig, Hagelzucker</em></span><span class="leader"></span><span class="m-price">3,60</span></li>
+            <li><span class="m-name">Laugenstange<em>mit oder ohne Butter</em></span><span class="leader"></span><span class="m-price">2,10</span></li>
+            <li><span class="m-name">Schneckenkuchen<em>Rosinen, Zimt,Zuckerguss</em></span><span class="leader"></span><span class="m-price">4,20</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-col reveal">
+          <h3>Süßes &amp; Kaffee</h3>
+          <ul class="menu-list">
+            <li><span class="m-name">Käsekuchen<em>nach altem Rezept, ohne Boden</em></span><span class="leader"></span><span class="m-price">4,50</span></li>
+            <li><span class="m-name">Apfelkuchen<em>Boskop, Zimtstreusel</em></span><span class="leader"></span><span class="m-price">4,20</span></li>
+            <li><span class="m-name">Schoko-Cookie<em>72 % Kakao, Meersalz</em></span><span class="leader"></span><span class="m-price">2,90</span></li>
+            <li><span class="m-name">Filterkaffee<em>Rösterei aus Kreuzberg, 0,2 l</em></span><span class="leader"></span><span class="m-price">3,20</span></li>
+            <li><span class="m-name">Milchkaffee<em>Hafermilch ohne Aufpreis</em></span><span class="leader"></span><span class="m-price">4,10</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HANDWERK -->
+  <section class="section section-tint" id="handwerk">
+    <div class="wrap craft-grid">
+      <div class="craft-media reveal">
+        <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=900&q=80"
+             alt="Hände formen einen Teigling auf der bemehlten Arbeitsfläche" loading="lazy" width="800" height="1000">
+        <p class="caption">Mittwoch, 4:50 Uhr. Der Teig für den Ackerlaib wird gefaltet.</p>
+      </div>
+      <div class="craft-copy">
+        <p class="eyebrow reveal"><span class="dot"></span>Handwerk</p>
+        <h2 class="reveal">Drei Zutaten, die wir nicht ersetzen</h2>
+        <p class="reveal">Mehl von der Mühle in Saalow, Wasser aus dem Hahn, Salz. Dazu ein Sauerteig, der seit 2011 jeden Tag gefüttert wird. Alles andere ist Wartezeit.</p>
+        <ol class="steps">
+          <li class="reveal"><span class="step-n">01</span><div><h3>Sauerteig ansetzen</h3><p>Um 5 Uhr morgens bekommt der Ansatz Roggenmehl und warmes Wasser. Zwei Stunden, dann ist er reif.</p></div></li>
+          <li class="reveal"><span class="step-n">02</span><div><h3>Langsam gehen lassen</h3><p>18 Stunden bei 18 Grad im Keller. Kalte Gare heißt: mehr Aroma, gut bekömmliche Krume.</p></div></li>
+          <li class="reveal"><span class="step-n">03</span><div><h3>Im Holzofen einschießen</h3><p>Buchenholz, 250 Grad, dann rund 50 Minuten bei fallender Hitze. Die Kruste bekommt Farbe, nichts wird nachgeholfen.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAGESZEITEN TAB SWITCHER -->
+  <section class="section" id="tageszeiten">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow reveal"><span class="dot"></span>Tageszeiten</p>
+          <h2 class="reveal">Die Theke ändert sich mit der Uhr</h2>
+        </div>
+      </div>
+      <div class="tabs reveal" role="tablist" aria-label="Tageszeiten">
+        <button class="tab is-active" role="tab" id="tab-morgen" aria-controls="panel-morgen" aria-selected="true">Morgen<em>6:30 – 11:00</em></button>
+        <button class="tab" role="tab" id="tab-mittag" aria-controls="panel-mittag" aria-selected="false">Mittag<em>11:00 – 15:00</em></button>
+        <button class="tab" role="tab" id="tab-abend" aria-controls="panel-abend" aria-selected="false">Abend<em>15:00 – 18:00</em></button>
+      </div>
+
+      <div class="tab-panels">
+        <article class="tab-panel is-active" id="panel-morgen" role="tabpanel" aria-labelledby="tab-morgen">
+          <div class="panel-text">
+            <h3>Brot, Brötchen, heißer Kaffee</h3>
+            <p>Wenn die Tür aufgeht, riecht die Straße nach Kruste. Die erste Fuhre Brötchen ist gegen 6:20 fertig, Franzbrötchen folgen um 7:15. Wer Sonntagsbrot für Mittag will, bestellt vorher vor.</p>
+            <ul class="chips"><li>5 Brötchensorten</li><li>3 Brote ab 6:30</li><li>Café zum Hinstellen</li></ul>
+          </div>
+          <div class="panel-media"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80" alt="Croissants und Feingebäck auf einem Blech" loading="lazy" width="700" height="520"></div>
+        </article>
+
+        <article class="tab-panel" id="panel-mittag" role="tabpanel" aria-labelledby="tab-mittag">
+          <div class="panel-text">
+            <h3>Stullen und Kuchen</h3>
+            <p>Mittags gibt es belegte Brote vom Laib von heute Morgen: Käse mit Gurke, Rührei mit Schnittlauch, Lachs mit Dill. Dazu ein Stück Kuchen und ein Platz am Fenster — zwei kleine Tische, mehr nicht.</p>
+            <ul class="chips"><li>Belegte Brote</li><li>3 Kuchen am Tag</li><li>Zwei Fenstertische</li></ul>
+          </div>
+          <div class="panel-media"><img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=800&q=80" alt="Belegte Stullen und Brotscheiben auf einem Holzbrett" loading="lazy" width="700" height="520"></div>
+        </article>
+
+        <article class="tab-panel" id="panel-abend" role="tabpanel" aria-labelledby="tab-abend">
+          <div class="panel-text">
+            <h3>Restbrot mit Rabatt</h3>
+            <p>Ab 15 Uhr kostet übrig gebliebenes Brot 30 % weniger. Was bis Ladenschluss niemand mitnimmt, geht an die Suppenküche in der Kastanienallee. Bestellungen für den nächsten Tag nehmen wir bis 17 Uhr an.</p>
+            <ul class="chips"><li>30 % auf Brot</li><li>Vorbestellung bis 17 Uhr</li><li>Kein Müll</li></ul>
+          </div>
+          <div class="panel-media"><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=800&q=80" alt="Laibe Vollkornbrot und Brötchen in einer Auslage" loading="lazy" width="700" height="520"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENTO / BESUCH -->
+  <section class="section section-tint" id="besuch">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow reveal"><span class="dot"></span>Besuch</p>
+          <h2 class="reveal">Kastanienallee, dritte Tür</h2>
+        </div>
+        <p class="section-note reveal">Zwischen U2 Eberswalder Straße und Mauerpark. Kein Lieferdienst, keine Reservierung — wir halten Brot für dich zurück, wenn du vorher anrufst.</p>
+      </div>
+
+      <div class="bento">
+        <div class="card card-hours reveal">
+          <h3>Öffnungszeiten</h3>
+          <dl class="hours">
+            <div><dt>Mo – Fr</dt><dd>6:30 – 18:00</dd></div>
+            <div><dt>Samstag</dt><dd>7:00 – 15:00</dd></div>
+            <div><dt>Sonntag</dt><dd>8:00 – 13:00</dd></div>
+            <div class="closed"><dt>Montag im August</dt><dd>Betriebsferien</dd></div>
+          </dl>
+          <p class="card-foot">Letzter Kaffee 30 Minuten vor Schluss.</p>
+        </div>
+
+        <div class="card card-adresse reveal">
+          <h3>Adresse</h3>
+          <p class="big">Kastanienallee 41<br>10435 Berlin</p>
+          <p class="muted">Prenzlauer Berg, Bezirk Pankow</p>
+          <div class="card-actions">
+            <a class="btn btn-ghost btn-sm" href="https://www.openstreetmap.org/search?query=Kastanienallee%2041%2C%2010435%20Berlin" target="_blank" rel="noopener">Auf Karte öffnen</a>
+          </div>
+        </div>
+
+        <div class="card card-order reveal">
+          <h3>Brot vorbestellen</h3>
+          <form id="orderForm" novalidate>
+            <label for="oName">Name</label>
+            <input id="oName" name="name" type="text" autocomplete="name" placeholder="Wie sollen wir dich nennen?" required>
+            <label for="oBrot">Was möchtest du?</label>
+            <select id="oBrot" name="brot">
+              <option>Ackerlaib, 1 kg — 7,50 €</option>
+              <option>Dinkelbrot — 6,80 €</option>
+              <option>Kastenbrot, 750 g — 5,40 €</option>
+              <option>6er-Körnerbrötchen — 9,60 €</option>
+            </select>
+            <label for="oTag">Abholung</label>
+            <select id="oTag" name="tag">
+              <option>Heute</option>
+              <option>Morgen</option>
+              <option>Übermorgen</option>
+            </select>
+            <button class="btn btn-solid btn-block" type="submit">Reservierung anfragen</button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+
+        <div class="card card-photo reveal">
+          <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=900&q=80" alt="Frisch gebackene Brötchen auf einem Backblech" loading="lazy" width="900" height="700">
+          <p class="caption">Was übrig bleibt, geht um 18 Uhr an die Suppenküche.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="wrap faq-grid">
+      <div>
+        <p class="eyebrow reveal"><span class="dot"></span>Fragen</p>
+        <h2 class="reveal">Bevor du klingelst</h2>
+        <p class="reveal muted">Wenn etwas fehlt, ruf einfach an. Meistens geht Nina zwischen zwei Fuhren selbst ran.</p>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Kann ich Brot für eine Feier bestellen?<span class="plus" aria-hidden="true"></span></summary>
+          <p>Ja. Ab 10 Laiben bitte eine Woche vorher Bescheid geben, dann planen wir den Ofen um. Hochzeitsbrote und längliche Partybaguettes gehen auch.</p>
+        </details>
+        <details>
+          <summary>Gibt es etwas ohne Gluten oder vegan?</summary>
+          <p>Unsere Rotkornbrötchen sind aus Sauerteig gebacken, aber in derselben Backstube wie Weizen — für Zöliakie nicht geeignet. Vegan sind die Laugenstange, das Baguette und die meisten Kuchen.</p>
+        </details>
+        <details>
+          <summary>Kann ich mit Karte zahlen?</summary>
+          <p>Ab 3 € ja, Karte und Handy. Darunter wird es für uns teuer — Kleingeld hilft.</p>
+        </details>
+        <details>
+          <summary>Warum ist der Laden montags im August zu?</summary>
+          <p>Fünf Tage Betriebsferien, jedes Jahr. Der Sauerteig wartet im Keller, das Team fährt ans Meer.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap closing-inner">
+      <h2 class="reveal">Morgen um 6:30 steht die Tür offen.</h2>
+      <p class="reveal">Der Sauerteig ist schon angesetzt.</p>
+      <div class="closing-actions reveal">
+        <a class="btn btn-solid" href="#besuch">Brot vorbestellen</a>
+        <a class="btn btn-ghost btn-on-dark" href="#theke">Theke ansehen</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">Bäckerei&nbsp;Acker</span>
+      <p>Kastanienallee 41, 10435 Berlin<br>Seit 2011 jeden Morgen neu.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#theke">Theke</a>
+      <a href="#handwerk">Handwerk</a>
+      <a href="#tageszeiten">Tageszeiten</a>
+      <a href="#besuch">Besuch</a>
+    </nav>
+    <p class="footer-meta">© <span id="year">2026</span> Bäckerei Acker · <a href="https://www.openstreetmap.org/search?query=Kastanienallee%2041%2C%2010435%20Berlin" target="_blank" rel="noopener">Impressum &amp; Anfahrt</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
